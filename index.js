@@ -30,7 +30,7 @@ setInterval(() => {
     
     hora.innerHTML = `${hour}:`;
     minutos.innerHTML = `${minutes}:`;
-    segundos.innerHTML = `${seconds}`;
+    segundos.innerHTML = `${2+seconds}`;
     
     if (minutes.toString <= 9) {
         tiempoMinutos.innerHTML =  `0${minutes}`;
