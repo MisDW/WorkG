@@ -1,0 +1,170 @@
+*{
+    *border:1px solid black;
+}
+
+.box_cont{
+    width:370px;
+    padding:50px 60px;
+    border:1px solid #d8d8d8;
+    margin:85px auto;
+    text-align:center;
+    font-family: sans-serif;    
+    display:grid;
+    grid-template-columns:1fr;
+    justify-items:center;
+    border-radius:10px;
+}
+
+.title{
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+.title span{
+    padding:5px 0px;
+    margin:0px;
+}
+
+.title .uno{
+    font-size:25px;
+}
+
+.title .dos{
+    font-size:19px;
+    color: #505050;
+    word-spacing: -1px;
+}
+
+.logo{
+    width:90px;
+}
+
+.input{
+    *border:1px solid red;
+    width:110%;
+}
+
+.correo{
+    width:90%;
+    font-size:18px;
+    padding:18px;
+    margin:15px 0px;
+    border:1px solid #d8d8d8;
+    border-radius:5px;
+    outline-color: #4897d8;
+    place-content:none;
+}
+
+.olvidado{
+    color:#4897d8;
+    font-weight:bold;
+    text-decoration:none;
+    width:110%;
+    text-align:left;
+    width:110%;
+}
+
+.msg{
+    color: #868686;
+    width:110%;
+    text-align:left;
+    margin:50px 0px;
+}
+
+a{
+    color: #4897d8;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.btns{
+    display:-moz-grid-line;
+    width:110%;
+    text-align: center;
+    padding:10px;
+}
+
+.btns .btn_create{
+    color: #4897d8;
+    font-weight:bold;
+    font-size:15px;
+    background-color:white;
+    border-radius:10px;
+    border:0px;
+    padding:10px;
+    margin:0px 90px 0px 0px;
+}
+
+.btn_create:hover{
+    background-color: #f6fbff;
+}
+
+.btns .btn_sig{
+    color: white;
+    font-weight:bold;
+    font-size:15px;
+    background-color:#4897d8;
+    border-radius:10px;
+    border:0px;
+    padding:15px 35px;
+    margin:0px 0px 0px 60px;
+    right:0px;
+}
+
+.btns .btn_contraseña{
+    color: white;
+    font-weight:bold;
+    font-size:15px;
+    background-color:#4897d8;
+    border-radius:10px;
+    border:0px;
+    padding:15px 35px;
+    margin:0px 0px 0px 60px;
+    right:0px;
+}
+
+
+
+
+.btns .btn_sig:hover{
+    background-color: rgb(133, 204, 236);
+}
+
+.cor_con_logo{
+    background-color:white;
+    padding:6px 40px;
+    border:1px solid #c2c2c2;
+    border-radius:20px;
+    text-align:center;
+    position:relative;
+}
+
+.cor_con_logo span{
+    font-weight:bold;
+    font-size:17px;
+    color:#575757;
+    letter-spacing:1px;
+}
+
+.cor_con_logo img{
+    width:30px;
+    position:absolute;
+    left:2px;
+    top:1px;
+}
+
+.box_check{
+    padding:10px;
+    font-size:20px;
+    text-align:left;
+    display:none;
+}
+
+.box_check span{
+    font-size: 18px;
+}
+
+.box_check input{
+    width:20px;
+    height:20px;
+}
