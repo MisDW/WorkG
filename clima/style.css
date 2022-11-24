@@ -1,0 +1,255 @@
+*{
+    padding:1px;
+    border:0px solid black;
+    margin:0px;
+}
+
+:root{
+    --primary:aliceblue;
+    --secundary:#192a36;
+    --degrade:linear-gradient(aliceblue, skyblue, steelblue);
+}
+
+html{
+    background:steelblue;
+    display:block;
+    position: relative;
+    z-index:2;
+}
+
+body{
+    background:var(--degrade);
+    font-family: Arial, Helvetica, sans-serif;
+    display:grid;
+    justify-content:center;
+    overflow-y: scroll;
+    overflow-x:none;
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index:5;
+}
+
+.box_pagina{
+    box-shadow:3px 3px 10px rgba(46, 46, 46, 0.253);
+    padding:10px;
+}
+
+.header{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.header img{
+    border-radius:100%;
+    box-shadow:3px 3px 20px rgba(46, 46, 46, 0.411);
+}
+
+.header .name_page p{
+    margin:25px auto;
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+    color:steelblue;
+}
+
+.header .name_page p span{
+    color:orange;
+    font-size:35px;
+}
+
+.box_content{
+    display:grid;
+    justify-content:center;
+}
+
+.box_content .info_weather{
+    padding:20px;
+    display:block;
+    position: relative;
+    text-align:center;
+    z-index:10;
+    overflow: hidden;
+}
+
+.box_content .info_weather::after{
+    content:"";
+    background-color:aliceblue;
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    border-radius:20px;
+    opacity:0.4;
+    z-index:10;
+    display:block;
+}
+
+.box_content .info_weather::before{
+    content:"";
+    background-color:white;
+    position:absolute;
+    width:100px;
+    height:180%;
+    top:-50%;
+    left:-500px;
+    transform: rotate(20deg);
+    transition:1s ease;
+    opacity:0.2;
+    display:block;
+    z-index:11;
+    filter: blur(5px);
+    box-shadow:300px -35px 1px white;
+    animation:glass 6s infinite ease;
+}
+
+@keyframes glass {
+    to{left:600px;}
+}
+
+.box_content .info_weather .box_info_weather{
+    content:"";
+    /* background-color:blue; */
+    position:relative;
+    display:grid;
+    justify-content:center;
+    grid-template-columns:1fr;
+    justify-items:center;
+    z-index:18;
+}
+
+.box_content .info_weather .box_info_weather .name_city{
+    margin:0px;
+    padding:0px;
+}
+
+.box_content .info_weather .box_info_weather .description{
+    display:grid;
+    grid-template-columns:1fr;
+    font-size:13px;
+    font-weight:bold;
+    background-color:aliceblue;
+    border-radius:10px;
+    border:1px solid grey;
+    padding:5px;
+    opacity:0.8;
+    margin:0px;
+    width:100%;
+}
+
+.box_content .info_weather .box_info_weather .grados{
+    background-color:aliceblue;
+    border-radius:10px;
+    border:1px solid grey;
+    opacity:0.8;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    z-index:20;
+}
+
+.box_content .info_weather .box_info_weather .grados .grados_min_max{
+    padding:5px;
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+.box_content .info_weather .box_info_weather .grados .grados_nor{
+    color:blue;
+    font-size:30px;
+}
+
+.box_content .info_weather .box_info_weather .grados .grados_max{
+    color:limegreen;
+}
+
+.box_content .info_weather .box_info_weather .grados .grados_min{
+    color:red;
+}
+
+.box_content .info_weather .box_info_weather img{
+    z-index:20;
+    display:block;
+    position:relative;
+}
+
+.input{
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+.input div{
+    padding:10px;
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+.input div label{
+    font-weight:bold;
+    font-size:18px;
+    color:aliceblue;
+    text-shadow:3px 3px 1px steelblue;
+    margin:5px 0px
+}
+
+.input .date{
+    padding:10px;
+    font-size:20px;
+    outline:aliceblue;
+    user-select:none;
+    cursor: pointer;
+    border-radius:10px;
+}
+
+.input .btn_date{
+    background-color:orange;
+    color:aliceblue;
+    font-weight:bold;
+    border-radius:20px;
+    padding:20px;
+    margin:10px 0px 0px 0px;
+}
+
+.btn_date:hover{
+    background-color:darkorange;
+}
+
+/*MENSAJE DE ALERTA JAVASCRIPT*/
+.msg_error{
+    position:fixed;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    background-color:rgba(56, 78, 107, 0.308);
+    z-index:40;
+    display:grid;
+    justify-content:center;
+    justify-items:center;
+    text-align:center;
+}
+
+.msg_error div{
+    margin:40px auto;
+    padding:20px;
+    background-color:aliceblue;
+    border-radius:10px;
+    box-shadow:3px 3px 20px grey;
+    width:300px;
+    height:200px;
+}
+
+.msg_error div img{
+    padding:30px;
+    background-color:white;
+    box-shadow:3px 3px 10px grey;
+    border-radius:10px;
+    margin:10px;
+}
+
+
+
+
+
+

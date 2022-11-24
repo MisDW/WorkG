@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box_pagina">
+        <div class="header">
+            <img src="img/clime/sol.png" alt="logo" class="logo">
+            <div class="name_page">
+                <p>Weather <span>Web</span><br>misael.web</p>
+            </div>
+        </div>
+
+        <form class="box_content">
+            <div class="info_weather">
+                <div class="box_info_weather">
+                        <h2 class="name_city">Pais, Ciudad</h2>
+                        <p class="description">Descripcion: ---</p>
+                    <img src="https://openweathermap.org/img/wn/04d@4x.png" alt="clime" class="img_clima">
+                    <div class="grados">
+                        <span class="grados_nor">0°C</span>
+                        <div class="grados_min_max">
+                            <span class="grados_max">0°C max</span>
+                            <span class="grados_min">0°C min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input">
+                <div class="contry">
+                        <label for="contry">Pais</label>
+                    <select name="contry" id="contry" class="date">
+                        <option value="nothing" disabled>PAISES</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="España">España</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Rusia">Rusia</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="London">London</option>
+                    </select>
+                </div>
+                <div class="city">
+                    <label for="city">Ciudad</label>
+                    <input type="text" name="city" id="city" class="date">
+                </div>
+                <input type="submit" value="Buscar" class="date btn_date">
+            </div>
+
+        </form>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
