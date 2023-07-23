@@ -9,6 +9,7 @@
 
 body{
     background:var(--negro);
+    user-select:none;
 }
 
 .contenedor_letrero{
