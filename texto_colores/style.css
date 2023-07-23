@@ -14,8 +14,11 @@ body{
 
 .contenedor_letrero{
     background-color:transparent;
-    width:100vh;
-    height:100vh;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
     margin:auto;
     display:grid;
     justify-content:center;
@@ -27,11 +30,24 @@ body{
     font-family: 'Londrina Shadow', cursive;
     font-weight:bold;
     transition:2s ease;
+    text-align:center;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:900px){
     .texto{
-        font-size:110px;
+        font-size:100px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .texto{
+        font-size:70px;
+    }
+}
+
+@media screen and (max-width:250px){
+    .texto{
+        font-size:50px;
     }
 }
 
