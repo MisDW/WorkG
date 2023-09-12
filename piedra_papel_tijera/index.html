@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra - Papel - Tijeras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container_page">
+        <div class="dates">
+            <div id="wins">Wins: 0</div>
+            <div id="lose">Lose: 0</div>
+        </div>
+
+        <div class="alerts">
+            <div class="winUser msg_alert_off">Player Win +1 Pts</div>
+            <div class="winMachine msg_alert_off">Bot Win +1 Pts</div>
+            <div class="nathing msg_alert_off">Nobody wins</div>
+            <div class="win_game_user msg_alert_off">¡User win! Reloaded...</div>
+            <div class="win_game_machine msg_alert_off">Bot win! Reloaded...</div>
+        </div>
+        <div class="content_game">
+            <!-- display primer contenedor -->
+            <div class="display">
+                <div class="points" id="points_user">You Points: 0</div>
+                <div class="round points">Round: 1</div>
+                <div class="points" id="points_machine">Bot Points: 0</div>
+            </div>
+            <!-- contenedor 2 - usuario  -->
+            <div class="players">
+                <div class="eleccion" id="eleccion_user">
+                    <div class="float_point" ><span id="float_point_user" class="fp">+1</span></div>
+                    <img src="img/nothing.png" alt="nothing" class="btn_attacks nothing" id="user_nothing">
+                </div>
+            </div>
+            <!-- contenedor central - vs -->
+            <div class="center">
+                <img src="./img/vs.png" alt="versus" class="vs">
+                    <div class="attacks">                
+                        <div class="btn" id="piedra"><img src="img/piedra.png" alt="piedra" class="btn_attacks"></div>
+                        <div class="btn" id="papel"><img src="img/papel.png" alt="papel" class="btn_attacks"></div>
+                        <div class="btn" id="tijeras"><img src="img/tijeras.png" alt="tijeras" class="btn_attacks"></div>
+                    </div>
+            </div>
+            <!-- contenedor machine -->
+            <div class="players">
+                <div class="eleccion" id="eleccion_machine">
+                    <div class="float_point"><span id="float_point_machine" class="fp">+1</span></div>
+                    <img src="img/nothing.png" alt="nothing" class="btn_attacks nothing" id="machine_nothing">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

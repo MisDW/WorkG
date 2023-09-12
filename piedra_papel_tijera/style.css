@@ -1,0 +1,181 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family:calibri;
+}
+
+:root{
+    --gradient:linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    --degradado:#33333360;
+    --green:#3ebd3e;
+    --red:#da4444;
+}
+
+.alerts{
+    position:absolute;
+    inset:0px 0px 0px 0px;
+    z-index:100;
+    display:grid;
+    justify-items:center;
+    display:none;
+}
+
+/* .win_game_user hacer una pantalla de vitoria por si quiere seguir jugando el usuario */
+
+.green{
+    background:#44da44 !important;
+    color:#ffff;
+}
+
+.red{
+    background:var(--red) !important;
+    color:#ffff;
+}
+
+
+.msg_alert_off{
+    display:none;
+}
+
+.msg_alert_on{
+    background:#ffff;
+    padding:20px;
+    max-width:200px;
+    margin:40vh auto;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:3px 3px 10px var(--degradado);
+    display:block;
+}
+
+.container_page{
+    background-image:var(--gradient);
+    position:fixed;
+    inset:0px 0px 0px 0px;
+    display:grid;
+    justify-content:center;
+}
+
+.content_game{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    background-color:#ffff;
+    box-shadow:3px 3px 10px #3f3f3f;
+    position:relative;
+    max-width:600px;
+    padding-top:80px;
+    margin:auto 0px;
+    border-radius:10px;
+}
+
+.dates{
+    position:absolute;
+    background-color:#ffff;
+    padding:10px 30px;
+    border-radius:0px 0px 10px 0px;
+}
+
+.btn_restart{
+    background-color:var(--green);
+    color:#ffff;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.points{
+    margin:5px;
+    padding:5px;
+    border:0px;
+    text-align:center;
+}
+
+.btn_attacks{
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    border:5px solid #ffff;
+    box-shadow:3px 3px 5px #3f3f3f;
+    margin:5px;
+    cursor: pointer;
+    transition:0.1s ease;
+}
+
+.btn_attacks:hover{
+    transform:scale(1.3);
+}
+
+.nothing{
+    scale:2;
+    animation: vs 0.9s ease alternate-reverse infinite;
+}
+
+.display{
+    background-color:#ffff;
+    box-shadow:0px 15px 20px var(--degradado);
+    position:absolute;
+    left:0px;
+    right:0px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    padding:5px 0px;
+}
+
+/* contenedor que encierra a la eleccion */
+.players{
+    display:grid;
+    justify-items:center;
+}
+
+.eleccion{
+    background-color:red;
+    position:relative;
+    margin:auto 0px;
+    text-align:center;
+}
+
+.float_point{
+    background-color:blue;
+    position:absolute;
+    left:0px;
+    right:0px;
+}
+
+.fp{
+    font-size:50px;
+    color:blue;
+    position: relative;
+    font-weight:bold;
+}
+
+@keyframes floatPoint {
+    0%{top:0px;opacity:-1;}
+    100%{top:-100px;opacity:1;}
+}
+
+
+.machine{
+    background-color: brown;
+}
+
+.vs{
+    max-width:100px;
+    animation: vs 1s ease alternate-reverse infinite;
+}
+
+@keyframes vs {
+    0%{transform: scale(0.9);}
+    100%{transform: scale(1.3);}
+}
+
+
+.center{
+    /* background-color:teal; */
+    display:grid;
+    justify-items:center;
+}
+
+.attacks{
+    display:flex;
+    padding:5px;
+}
