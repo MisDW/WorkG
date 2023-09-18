@@ -1,0 +1,76 @@
+body{
+    background: rgb(181,181,181);
+    background: linear-gradient(90deg, rgba(181,181,181,1) 0%, rgba(112,6,133,1) 0%, rgba(0,212,255,1) 100%);
+    font-family:calibri;
+}
+
+.cont_calculadora{
+    background-color:transparent;
+    padding:10px;
+    width:300px;
+    height:400px;
+    box-shadow:3px 3px 15px rgba(0, 0, 0, 0.507);
+    border-radius:20px;
+    margin:0px auto;
+    display:grid;
+}
+
+.cont_display{
+    background-color:transparent;
+    position:relative;
+}
+
+.cont_display .display{
+    color:white;
+    /* box-shadow:3px 3px 15px rgba(0, 0, 0, 0.336); */
+    font-size:25px;
+    text-align:right;
+    padding:10px 30px;
+    border-radius:10px;
+    left:0px;
+    right:0px;
+    position:absolute;
+    overflow-x: auto;
+}
+
+.cont_btn{
+    padding:10px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+}
+
+.cont_btn button{
+    background-color:transparent;
+    margin:5px 0px;
+    border:0px;
+}
+
+.cont_btn .cont_num{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+.cont_btn .cont_ope{
+    display:grid;
+}
+
+.cont_btn .cont_ope button{
+    padding:10px;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.cont_num button{
+    padding:5px 10px;
+    font-size:20px;
+    color:white;
+}
+
+button:hover{
+    box-shadow:3px 3px 4px rgba(0, 0, 0, 0.200);
+}
+
+.btn_especial{
+    position:relative;
+}
